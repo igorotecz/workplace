@@ -42,3 +42,40 @@ function add(a, b, c) {
 console.log(add(15, 27, 10));
 console.log(add(10, 20, 30));
 console.log(add(5, 10, 15));
+
+function showname() {
+    console.log(`Вася`);
+}
+setTimeout(showname, 500);
+console.log('Коля');
+
+showMessage();
+function showMessage() {
+   console.log(`Message`); 
+}
+
+
+let showMessages = function () {
+    console.log(`Message_2`);
+}
+showMessages();
+
+// let showMessagenext = (text, name) => text + `, ` + name + `!`;
+// console.log(showMessagenext('Hello', 'Vasya'));
+
+// function showNamber(num) {
+//     console.log(num);
+//     if (num<10) {
+//       setTimeout(showNamber, 1000, ++num);   
+//     }
+// }
+// setTimeout(showNamber, 1000, 1);
+ 
+`use strict`
+let showMessage4;
+if (2 > 1) {
+    showMessage4 = function () {
+        console.log(`Message4`);
+    }
+}
+showMessage4();
