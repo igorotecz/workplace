@@ -43,11 +43,11 @@ console.log(add(15, 27, 10));
 console.log(add(10, 20, 30));
 console.log(add(5, 10, 15));
 
-function showname() {
-    console.log(`Вася`);
-}
-setTimeout(showname, 500);
-console.log('Коля');
+// function showname() {
+//     console.log(`Вася`);
+// }
+// setTimeout(showname, 500);
+// console.log('Коля');
 
 showMessage();
 function showMessage() {
@@ -79,3 +79,8 @@ if (2 > 1) {
     }
 }
 showMessage4();
+
+const max = 10;
+const min = 5;
+const resalt = Math.round(Math.random() * (max - min) + min);
+console.log(resalt);
