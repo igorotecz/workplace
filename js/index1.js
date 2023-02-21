@@ -84,3 +84,57 @@ const max = 10;
 const min = 5;
 const resalt = Math.round(Math.random() * (max - min) + min);
 console.log(resalt);
+
+function isAdult(age) {
+  // Change code below this line
+  const passed = age >= 18;
+
+  // Change code above this line
+  return passed;
+}
+console.log(isAdult(20)); 
+console.log(isAdult(14)); 
+console.log(isAdult(8));
+console.log(isAdult(37));
+
+function isValidPassword(password) {
+  const SAVED_PASSWORD = 'jqueryismyjam';
+  const isMatch = SAVED_PASSWORD === password;
+  return isMatch;
+}
+console.log(isValidPassword("mangodab3st"));
+console.log(isValidPassword("kiwirul3z"));
+console.log(isValidPassword('jqueryismyjam'));
+
+// function checkAge(age) {
+//   let message;
+
+//   if (age >= 18) { // Change this line
+//     message = 'You are an adult';
+//   } else {
+//     message = 'You are a minor';
+//   }
+
+//   return message;
+// }
+// console.log(checkAge(20)); 
+// console.log(checkAge(8));
+// console.log(checkAge(14)); 
+// console.log(checkAge(38)); 
+
+// const x = typeof 0;
+// console.log(x);
+
+const x1 = 10;
+const x2 = 30;
+const number = 50;
+// const number = prompt('Введіть число');
+let res;
+if (number >= x1 && number <= x2) {
+    res = "Namber is OK";
+} else if (number < x1) {
+    res = "Namber is less then x1";
+} else {
+    res = "Number is more then x2"
+}
+console.log(res);
